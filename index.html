@@ -7,11 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>main page</title>
 
-
-
-
-  
-
   <!-- <link rel="icon" href="./favicon.png"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +16,7 @@
   <!-- 아이콘 -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="/css/common.css">
-  <link rel="stylesheet" href="/css/test.css">
+  <link rel="stylesheet" href="/css/index.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
     integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
@@ -98,10 +93,18 @@
   <!-- VISUAL -->
   <section class="visual">
     <div class="inner">
-
       <div class="title fade-in">
-        <img src="/img/title.png" alt="title" width="80%">
-        <a href="javascripts:void(0)" class="btn btn--white">자세히 보기</a>
+        <img src="/img/title.png" alt="title">
+
+        <div class="fade-in">
+          <img src="/img/title1.png" alt="title1" width="120%" class="title1">
+          <a href="javascripts:void(0)" class="btn btn--white title1--btn">자세히 보기</a>
+        </div>
+
+        <div class="fade-in">
+          <img src="/img/title2.png" alt="title2" width="180%" class="title2">
+        </div>
+
       </div>
     </div>
   </section>
@@ -188,48 +191,241 @@
   <!-- REWARDS -->
   <section class="rewards">
     <div class="bg-left">
-      <h1>신규 프로젝트!</h1>
-      
-      <div class="inner">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="/img/game1.PNG" class="card-img-top" alt="..." width="50%">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
+      <div class="bg-left-title">
+        <!-- <h2 class="newlist" data-text="신규 프로젝트 목록">신규 프로젝트 목록</h2> -->
+        <div class="glitch">
+          <span aria-hidden="true">신규 프로젝트 목록</span>
+          신규 프로젝트 목록
+          <span aria-hidden="true">신규 프로젝트 목록</span>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-      
-      
       </div>
 
+      <div class="container">
+
+        <!-- 게임 리스트 -->
+        <div class="card--list container-item">
+          <div class="lines"></div>
+          <div class="imgBx">
+            <img src="/img/game1.PNG" alt="">
+          </div>
+          <!-- 파란 박스 안 내용 -->
+          <div class="content">
+            <div class="details">
+              <h2>
+                <div class="glitch">
+                  <span aria-hidden="true">새로 나온 게임1</span>
+                  새로 나온 게임1
+                  <span aria-hidden="true">새로 나온 게임1</span>
+                </div>
+                <label>액션/RPG</label>
+              </h2>
+              <div class="data">
+                <h3>342 <br><span>후원 수</span></h3>
+                <h3>120k <br><span>Followers</span></h3>
+              </div>
+              <!-- 달성률 관한 -->
+              <div class="container--percent">
+                <div class="card">
+                  <div class="percent" style="--clr:#04fc43;--num:85;">
+                    <div class="dot"></div>
+                    <svg>
+                      <circle cx="70" cy="70" r="70"></circle>
+                      <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                      <h2>85<span>%</span></h2>
+                      <p>달성률</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="actionBtn ">
+                <button> 자세히 보기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card--list container-item">
+          <div class="lines"></div>
+          <div class="imgBx">
+            <img src="/img/game2.PNG" alt="">
+          </div>
+          <!-- 파란 박스 안 내용 -->
+          <div class="content">
+            <div class="details">
+              <h2>
+                <div class="glitch">
+                  <span aria-hidden="true">새로 나온 게임2</span>
+                  새로 나온 게임2
+                  <span aria-hidden="true">새로 나온 게임2</span>
+                </div>
+                <label>힐링/판타지</label>
+              </h2>
+              <div class="data">
+                <h3>52 <br><span>후원 수</span></h3>
+                <h3>63k <br><span>Followers</span></h3>
+              </div>
+              <!-- 달성률 관한 -->
+              <div class="container--percent">
+                <div class="card">
+                  <div class="percent" style="--clr:#04fc43;--num:55;">
+                    <div class="dot"></div>
+                    <svg>
+                      <circle cx="70" cy="70" r="70"></circle>
+                      <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                      <h2>55<span>%</span></h2>
+                      <p>달성률</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="actionBtn ">
+                <button> 자세히 보기</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
+        <div class="card--list container-item">
+          <div class="lines"></div>
+          <div class="imgBx">
+            <img src="/img/game3.PNG" alt="">
+          </div>
+          <!-- 파란 박스 안 내용 -->
+          <div class="content">
+            <div class="details">
+              <h2>
+                <div class="glitch">
+                  <span aria-hidden="true">새로 나온 게임3</span>
+                  새로 나온 게임3
+                  <span aria-hidden="true">새로 나온 게임3</span>
+                </div>
+                <label>액션/RPG</label>
+              </h2>
+              <div class="data">
+                <h3>111 <br><span>후원 수</span></h3>
+                <h3>84k <br><span>Followers</span></h3>
+              </div>
+              <!-- 달성률 관한 -->
+              <div class="container--percent">
+                <div class="card">
+                  <div class="percent" style="--clr:#04fc43;--num:22;">
+                    <div class="dot"></div>
+                    <svg>
+                      <circle cx="70" cy="70" r="70"></circle>
+                      <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                      <h2>22<span>%</span></h2>
+                      <p>달성률</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="actionBtn ">
+                <button> 자세히 보기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card--list container-item">
+          <div class="lines"></div>
+          <div class="imgBx">
+            <img src="/img/game4.PNG" alt="">
+          </div>
+          <!-- 파란 박스 안 내용 -->
+          <div class="content">
+            <div class="details">
+              <h2>
+                <div class="glitch">
+                  <span aria-hidden="true">새로 나온 게임4</span>
+                  새로 나온 게임4
+                  <span aria-hidden="true">새로 나온 게임4</span>
+                </div>
+                <label>액션/RPG</label>
+              </h2>
+              <div class="data">
+                <h3>342 <br><span>후원 수</span></h3>
+                <h3>120k <br><span>Followers</span></h3>
+              </div>
+              <!-- 달성률 관한 -->
+              <div class="container--percent">
+                <div class="card">
+                  <div class="percent" style="--clr:#04fc43;--num:85;">
+                    <div class="dot"></div>
+                    <svg>
+                      <circle cx="70" cy="70" r="70"></circle>
+                      <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                      <h2>85<span>%</span></h2>
+                      <p>달성률</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="actionBtn ">
+                <button> 자세히 보기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card--list container-item">
+          <div class="lines"></div>
+          <div class="imgBx">
+            <img src="/img/game5.PNG" alt="">
+          </div>
+          <!-- 파란 박스 안 내용 -->
+          <div class="content">
+            <div class="details">
+              <h2>
+                <div class="glitch">
+                  <span aria-hidden="true">새로 나온 게임5</span>
+                  새로 나온 게임5
+                  <span aria-hidden="true">새로 나온 게임5</span>
+                </div>
+                <label>액션/RPG</label>
+              </h2>
+              <div class="data">
+                <h3>342 <br><span>후원 수</span></h3>
+                <h3>120k <br><span>Followers</span></h3>
+              </div>
+              <!-- 달성률 관한 -->
+              <div class="container--percent">
+                <div class="card">
+                  <div class="percent" style="--clr:#04fc43;--num:85;">
+                    <div class="dot"></div>
+                    <svg>
+                      <circle cx="70" cy="70" r="70"></circle>
+                      <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                      <h2>85<span>%</span></h2>
+                      <p>달성률</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="actionBtn ">
+                <button> 자세히 보기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+
+
+
     <div class="bg-right"></div>
     <div class="inner">
 
