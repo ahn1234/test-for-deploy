@@ -1,7 +1,7 @@
 const data = [
     {
     id : 1,
-    game_name : "새로운 게임 1",
+    game_name : "액션 게임 1",
     game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game1.PNG?raw=true" ,
     game_sup:74,
     game_foll:120,
@@ -10,7 +10,7 @@ const data = [
     },
     {
         id : 2,
-        game_name : "새로운 게임 2",
+        game_name : "RTS Game 2",
         game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game2.PNG?raw=true" ,
         game_sup:21,
         game_foll:10,
@@ -19,8 +19,8 @@ const data = [
     },
     {
         id : 3,
-        game_name : "새로운 게임 3",
-        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game3.PNG?raw=true" ,
+        game_name : "FPS 게임 3",
+        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game3.png?raw=true" ,
         game_sup:99,
         game_foll:50,
         game_ach : 65,
@@ -29,16 +29,16 @@ const data = [
     {
         id : 4,
         game_name : "새로운 게임 4",
-        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game4.PNG?raw=true" ,
+        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game4.png?raw=true" ,
         game_sup:41,
         game_foll:80,
-        game_ach : 73,
+        game_ach : 32,
         game_cat : "RPG"
     },
     {
         id : 5,
         game_name : "새로운 게임 5",
-        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game5.PNG?raw=true" ,
+        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game5.png?raw=true" ,
         game_sup:43,
         game_foll:57,
         game_ach : 15,
@@ -47,7 +47,7 @@ const data = [
     {
         id : 6,
         game_name : "새로운 게임 6",
-        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game6.PNG?raw=true" ,
+        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game6.png?raw=true" ,
         game_sup:43,
         game_foll:84,
         game_ach : 77,
@@ -79,7 +79,7 @@ const displayProducts = (filteredProducts) => {
                 <span class = "game_cat">${product.game_cat} </span>
                 <label class="letter">후원 수 : <label class = "game_sup">${product.game_sup} </label></label>
                 <label class="letter">팔로워수 : <label class = "game_foll">${product.game_foll} </label></label>
-                <label class="letter">달성률 : <label class = "game_ach">${product.game_ach} </label></label>
+                <label class="letter">달성률 : <label class = "game_ach">${product.game_ach} %</label></label>
                 <div class="actionBtn ">
                     <button class="glitch" onclick="location.href='project_detail.html'"> 자세히 보기</button>
                 </div>
@@ -102,7 +102,7 @@ searchInput.addEventListener("keyup", (e) => {
    const value = e.target.value.toLowerCase();
 
    if(value){
-    displayProducts(data.filter(itemp=> itemp.name.toLowerCase().indexOf(value) !== -1));
+    displayProducts(data.filter(itemp=> itemp.game_name.toLowerCase().indexOf(value) !== -1));
     }else{
         displayProducts(data)
    }

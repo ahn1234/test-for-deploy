@@ -236,6 +236,8 @@
     border-radius: 10px;
     box-shadow: inset 0px 0px 5px white;
   }
+
+/* 리스트 왼쪽 */
 .rewards .bg-left{
     width: 55%;
     height: 100%;
@@ -245,41 +247,13 @@
     display: flex;
 }
 .rewards .bg-left .bg-left-title .glitch{
-    font-size: 6rem;
+    font-size: 4rem;
     -webkit-text-stroke: 0.06vw #45f3ff;
     filter: drop-shadow(0 0 8px #45f3ff);
 }
-.rewards .bg-left .bg-left-title h2{
-    position: relative;
-    color : #23242a;
-    font-size: 4vw;
-    -webkit-text-stroke: 0.06vw #45f3ff;
-    text-transform: uppercase;
-}
-.rewards .bg-left-title h2::before{
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    color: #45f3ff;
-    -webkit-text-stroke: 0vw #23242a;
-    border-right: 1px solid #45f3ff;
-    overflow: hidden;
-    animation: animateTitle 8s linear infinite;
-    filter: drop-shadow(0 0 20px #45f3ff);
-}
-@keyframes animateTitle{
-    0%,10%,100%
-    {
-        width: 0;
-    }
-    
-    70%,90%{
-        width: 100%;
-    }
-}
+
+
+
 .rewards .bg-left .container{
     display: flex;
     width: 100%;
@@ -287,23 +261,18 @@
     justify-content: center;
 }
 .rewards .bg-left .container .container-item{
-    margin : 5rem;
+    margin : 3rem;
     margin-top: 15rem;
 }
 
-
-
-
 .card--list{
     position: relative;
-    width: 400px;
-    height: 860px;
+    width: 250px;
+    height: 700px;
     background: #fff;
     transition: 0.5s;
 }
-/* .card:hover{
-    height: 450px;
-} */
+
 .card--list .lines{
     position: absolute;
     inset: 0;
@@ -342,7 +311,7 @@
     top: -120px;
     left: 50%;
     transform: translateX(-50%);
-    width: 500px;
+    width: 300px;
     height: 250px;
     background: #000;
     transition: 0.5s;
@@ -388,17 +357,15 @@
     height: calc(100% - 20px);
 }
 .bg-left .card--list .content{
-    top: -20px;
     position: absolute;
+    padding-top: 10rem;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
     overflow: hidden;
 }
 .bg-left .card--list .content .details{
-    padding: 25px 100px;
     text-align: center;
     width: 100%;
     transition: 0.5s;
@@ -407,11 +374,10 @@
 .card--list .content .details h2{   /* 제목 */
     color : #23242a;
     -webkit-text-stroke: 0.06vw #45f3ff;
-    font-size: 4.5rem;
-    line-height: 4.5rem;
+    font-size: 2.5rem;
 }
 .card--list .content .details label{/*장르*/
-    font-size: 2rem;
+    font-size: 1.5rem;
     -webkit-text-stroke: 0.06vw #fff;
     filter: drop-shadow(0 0 0.5px #fff);
 }
@@ -424,14 +390,14 @@
     color : #23242a;
     -webkit-text-stroke: 0.06vw #45f3ff;
     filter: drop-shadow(0 0 1.5px #45f3ff);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .bg-left .card--list .content .details .data h3 span{ /*데이터 이름*/
     color : #23242a;
     -webkit-text-stroke: 0.06vw #fff;
     filter: drop-shadow(0 0 1.5px #fff);
-
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin: 15px;
     
 }
 .bg-left .card--list .content .details .actionBtn{ /* 바로가기 버튼*/
@@ -442,11 +408,11 @@
 }
 .bg-left .card--list .content .details .actionBtn button{
     font-family: 'Black Han Sans', sans-serif;
-    width: 20rem;
-    height: 5rem;
-    padding: 10px 30px;
+    width: 12rem;
+    height: 4rem;
+    padding: 5px 15px;
     border-radius: 10px;
-    font-size: 3rem;
+    font-size: 1.5rem;
     border: 0.25rem solid #45f3ff;
     filter: drop-shadow(0 0 15px #45f3ff);
     background: #23242a;
@@ -579,32 +545,12 @@ filter: drop-shadow(0 0 2px #fff);
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: 200px;
+    margin-right: 1rem;
     border-left:#383a43 3px solid;
 
 }
-.rewards .inner{
-    /* background-image: url("../images/rewards.jpg");
-    height: 1200px; */
-}
-.rewards .btn-group{
-    position: absolute;
-    bottom: 24px;
-    right: 0;
-    width: 250px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.rewards .btn-group .btn.sign-up{
-    margin-right: 10px;
-}
-.rewards .btn-group .btn.sign-in{
-    width: 110px;
-}
-.rewards .btn-group .btn.gift{
-    margin-top: 10px;
-    flex-grow: 1;
-}
+
+
 
 .rewards .bg-right{
     justify-content: center;
@@ -612,7 +558,7 @@ filter: drop-shadow(0 0 2px #fff);
 }
 
 .rewards .bg-right .bg-right-title .glitch{
-    font-size: 6rem;
+    font-size: 4rem;
     -webkit-text-stroke: 0.06vw #45f3ff;
     filter: drop-shadow(0 0 8px #45f3ff);
 }
@@ -633,11 +579,10 @@ filter: drop-shadow(0 0 2px #fff);
 }
 .rewards .bg-right .container .card--list{
     position: relative;
-    width: 800px;
-    height: 600px;
+    width: 450px;
+    height: 500px;
     background: #fff;
     transition: 0.5s;
-    margin-right: 10px;
 }
 
 .rewards .bg-right .container .container-item{
@@ -645,7 +590,7 @@ filter: drop-shadow(0 0 2px #fff);
     margin-top: 15rem;
 }
 .bg-right .container .details{
-    padding: 25px 50px;
+    padding: 5px 20px;
     padding-top: 160px;
     text-align: center;
     width: 100%;
@@ -661,10 +606,10 @@ filter: drop-shadow(0 0 2px #fff);
     overflow: hidden;
 }
 .bg-right .card--list .content .details .glitch{/*후원목록 내 게임 타이틀*/
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .bg-right .data span{/*후원목록 내 후원 제목*/
-    font-size: 3rem;
+    font-size: 1.7rem;
     -webkit-text-stroke: 0.06vw #48ff45;
     filter: drop-shadow(0 0 4px #24910b);
 }
@@ -681,7 +626,7 @@ filter: drop-shadow(0 0 2px #fff);
     height: 5rem;
     padding: 10px 30px;
     border-radius: 10px;
-    font-size: 3rem;
+    font-size: 2rem;
     border: 0.25rem solid #45f3ff;
     filter: drop-shadow(0 0 15px #45f3ff);
     background: #23242a;
