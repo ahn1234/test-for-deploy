@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
 /* COMMON */
 body {
     color: #333;
@@ -5,6 +7,7 @@ body {
     font-weight: 400;
     line-height: 1.4;
     font-family: 'Nanum Gothic', sans-serif;
+
     background-color: #23242a;
 }
 
@@ -188,6 +191,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 9;
+
 }
 
 header > .inner {
@@ -210,7 +214,8 @@ header .sub-menu{
     display: flex;
 }
 header .sub-menu ul.menu{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Black Han Sans', sans-serif;
+
     display: flex;
 }
 header .sub-menu ul.menu li{
@@ -284,15 +289,19 @@ header .main-menu .item{
     
 }
 header .main-menu .item .item__name{
-    padding: 10px 20px 34px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #45f3ff;
+    padding: 10px 20px 20px 20px;
+    font-family: 'Black Han Sans', sans-serif;
+
+    font-size: 2rem;
+    color : #23242a;
+    -webkit-text-stroke: 0.04vw #45f3ff;
 }
 header .main-menu .item:hover .item__name{
-    background-color: #45f3ff;
+    /* background-color: #45f3ff; */
     color: #23242a;
+    filter: drop-shadow(0 0 15px #45f3ff);
     border-radius: 6px 6px 0 0;
+    cursor: pointer;
 }
 header .main-menu .item .item__contents{
     width: 100%;
