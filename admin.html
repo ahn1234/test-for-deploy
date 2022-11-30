@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Getting Started with Chart JS with www.chartjs3.com</title>
+  <link rel="stylesheet" href="/css/admin.css">
+  <script src="/js/test.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="/index.html">
+            <span class="icon">
+              <ion-icon name="logo-apple"></ion-icon>
+            </span>
+            <span class="title">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span class="title">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="people-outline"></ion-icon>
+            </span>
+            <span class="title">Customers</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+            </span>
+            <span class="title">Message</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="help-outline"></ion-icon>
+            </span>
+            <span class="title">Help</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="settings-outline"></ion-icon>
+            </span>
+            <span class="title">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            </span>
+            <span class="title">Password</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="log-out-outline"></ion-icon>
+            </span>
+            <span class="title">Sign out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="topbar">
+        <div class="toggle">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <!-- Search -->
+        <div class="search">
+          <label>
+            <input type="text" placeholder="Search here">
+            <ion-icon name="search-outline"></ion-icon>
+          </label>
+        </div>
+        <!-- userImg -->
+        <div class="user">
+          <img src="/img/game1.png" alt="">
+        </div>
+      </div>
+
+      <!-- cards -->
+      <div class="cardBox">
+
+        <div class="card">
+          <div>
+            <div class="numbers">504</div>
+            <div class="cardName">조회수</div>
+          </div>
+          <div class="iconBx">
+            <ion-icon name="eye"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">8</div>
+            <div class="cardName">후원 수</div>
+          </div>
+          <div class="iconBx">
+            <ion-icon name="cart-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">24</div>
+            <div class="cardName">코멘트</div>
+          </div>
+          <div class="iconBx">
+            <ion-icon name="chatboxes"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">$7,824</div>
+            <div class="cardName">총 모금액</div>
+          </div>
+          <div class="iconBx">
+            <ion-icon name="cash"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- Add charts -->
+<div class="graphBox">
+  <div class="box">
+    <canvas id="myChart"></canvas>
+  </div>
+  <div class="box">
+    <canvas id="earning"></canvas>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+      <!-- detail list -->
+      <div class="details">
+        <div class="recentOrders">
+          <div class="cardHeader">
+            <h2>Recent Supports</h2>
+            <a href="#" class="btn">View All</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <td>후원 이름</td>
+                <td>총 금액</td>
+                <td>인원 수</td>
+                <td>개발 상태</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Star Refrigerator</td>
+                <td>$1200</td>
+                <td>Paid</td>
+                <td><span class="status return">return</span></td>
+              </tr>
+              <tr>
+                <td>Star Refrigerator</td>
+                <td>$1200</td>
+                <td>Paid</td>
+                <td><span class="status inprogress">inprogress</span></td>
+              </tr>
+              <tr>
+                <td>Star Refrigerator</td>
+                <td>$1200</td>
+                <td>Paid</td>
+                <td><span class="status pending">pending</span></td>
+              </tr>
+              <tr>
+                <td>Star Refrigerator</td>
+                <td>$1200</td>
+                <td>Paid</td>
+                <td><span class="status delivered">Delivered</span></td>
+              </tr>
+              <tr>
+                <td>Star Refrigerator</td>
+                <td>$1200</td>
+                <td>Paid</td>
+                <td><span class="status inprogress">inprogress</span></td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
+
+
+        <!-- New customers -->
+        <div class="recentCustomers">
+          <div class="cardHeader">
+            <h2>Recent Customers</h2>
+          </div>
+          <table>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/img/game1.png" alt=""></div></td>
+              <td><h4>David<br><span>Italy</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/img/game1.png" alt=""></div></td>
+              <td><h4>David<br><span>Italy</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/img/game1.png" alt=""></div></td>
+              <td><h4>David<br><span>Italy</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/img/game1.png" alt=""></div></td>
+              <td><h4>David<br><span>Italy</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/img/game1.png" alt=""></div></td>
+              <td><h4>David<br><span>Italy</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/img/game1.png" alt=""></div></td>
+              <td><h4>David<br><span>Italy</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/img/game1.png" alt=""></div></td>
+              <td><h4>David<br><span>Italy</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/img/game1.png" alt=""></div></td>
+              <td><h4>David<br><span>Italy</span></h4></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  
+  <script src="/js/my_chart.js"></script>
+
+
+  <script>
+    const toggle = document.querySelector('.toggle');
+    const navigation = document.querySelector('.navigation');
+    const main = document.querySelector('.main');
+
+    let list = document.querySelectorAll('.navigation li');
+
+
+
+    toggle.onclick = function () {
+      navigation.classList.toggle('active');
+      main.classList.toggle('active');
+    }
+
+
+    function activeLink() {
+      list.forEach((item) =>
+        item.classList.remove('hovered'));
+      this.classList.add('hovered');
+    }
+    list.forEach((item) =>
+      item.addEventListener('mouseover', activeLink));
+  </script>
+
+
+
+</body>
+
+</html>
