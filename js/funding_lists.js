@@ -1,57 +1,17 @@
 const funding_data = [
     {
         id : 1,
-        game_name : "액션 게임 1",
-        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game1.PNG?raw=true" ,
-        game_sup:74,
-        game_foll:120,
-        game_ach : 85,
-        game_cat : "ACTION"
+        funding_name : "액션 게임 1",
+        funding_sup:74,
+        fundation:120,
+
     },
     {
         id : 2,
-        game_name : "RTS Game 2",
-        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game2.PNG?raw=true" ,
-        game_sup:21,
-        game_foll:10,
-        game_ach : 78,
-        game_cat : "RTS"
-    },
-    {
-        id : 3,
-        game_name : "FPS 게임 3",
-        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game3.png?raw=true" ,
-        game_sup:99,
-        game_foll:50,
-        game_ach : 65,
-        game_cat : "FPS"
-    },
-    {
-        id : 4,
-        game_name : "새로운 게임 4",
-        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game4.png?raw=true" ,
-        game_sup:41,
-        game_foll:80,
-        game_ach : 32,
-        game_cat : "RPG"
-    },
-    {
-        id : 5,
-        game_name : "새로운 게임 5",
-        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game5.png?raw=true" ,
-        game_sup:43,
-        game_foll:57,
-        game_ach : 15,
-        game_cat : "ACTION"
-    },
-    {
-        id : 6,
-        game_name : "새로운 게임 6",
-        game_img : "https://github.com/ahn1234/test-for-deploy/blob/main/img/game6.png?raw=true" ,
-        game_sup:43,
-        game_foll:84,
-        game_ach : 77,
-        game_cat : "RPG"
+        funding_name : "RTS Game 2",
+        funding_sup:21,
+        fundation:10,
+
     },
 ]
 
@@ -69,7 +29,7 @@ const displayFunding = (filteredFundings) => {
     productsContainer.innerHTML = filteredFundings.map(
         (funding) =>
             `
-            <div class="funding">
+            <!----div class="funding">
                 <div class="lines"></div>
                 <div class="imgBx">
                     <img src=${funding.game_img} alt="">
@@ -82,7 +42,16 @@ const displayFunding = (filteredFundings) => {
                 <div class="actionBtn">
                     <button class="glitch" onclick="location.href='funding_detail.html'"> 자세히 보기</button>
                 </div>
-            </div>      
+            </div-->      
+            <div class="funding">
+                <div class="lines"></div>
+                <span class = "glitch funding_name">${funding.funding_name}</span>
+                <label class="letter">후원자 수 : <label class = "funding_sup">${funding.funding_sup} </label></label>
+                <label class="letter">후원금: <label class = "fundation">${funding.fundation} </label></label>
+                <div class="actionBtn ">
+                    <button class="glitch" onclick="location.href='project_detail.html'"> 자세히 보기</button>
+                </div>
+            </div>    
     `
     ).join("");
 };
