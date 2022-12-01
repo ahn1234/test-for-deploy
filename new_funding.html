@@ -92,17 +92,17 @@
 </header>
 
 <div class="box">
-    <div class="form">
+    <form class="form" onsubmit="">
         <h2>새 후원함 생성</h2>
         <div class="inputBox">
-            <input type="text" required="required">
+            <input id="funding_name" type="text" required="required">
             <span>
                     후원함 제목
                 </span>
             <i></i>
         </div>
         <div class="inputBox">
-            <input type="number" required="required">
+            <input id="funding_goal" type="number" required="required">
 
          <span>
                  목표 금액
@@ -114,11 +114,11 @@
           <span>
                  후원 상세 설명
              </span>-->
-         <textarea class ="detailBox" placeholder="후원 상세 설명" cols ="50" rows="10" required ="required"></textarea>
+         <textarea id ="funding_detail" class ="detailBox" placeholder="후원 상세 설명" cols ="50" rows="10" required ="required"></textarea>
          <i></i>
      </div>
      <input type="submit"value='생성'>
- </div>
+ </form>
 </div>
 
 <script>
@@ -133,7 +133,14 @@
  list.forEach((item) =>
      item.addEventListener('mouseover', activeLink)
  );
+
+ function jbSubmit(){
+     var name = document.getElementById( 'funding_name' ).value;
+     var goal = document.getElementById( 'funding_goal' ).value;
+     var detail = document.getElementById( 'funding_detail' ).value;
+ }
 </script>
+
 
 </body>
 
